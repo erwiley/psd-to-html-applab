@@ -1,0 +1,25 @@
+@mixin for-phone-only {
+  @media (max-width: $breakpoint-phone) { @content; }
+}
+@mixin for-tablet-only {
+  @media (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop) { @content; }
+}
+@mixin for-phone-and-tablet {
+  @media (max-width: $breakpoint-desktop) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: $breakpoint-desktop + 1 ) { @content; }
+}
+
+//@include for-phone-only {}
+//@include for-tablet-only {}
+//@include for-phone-and-tablet {}
+//@include for-desktop-only {}
+
+@mixin text-normal{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 44px;
+  color: $color-black-one;
+}

@@ -1,0 +1,19 @@
+header,
+main,
+footer{
+  width:1600px;
+  margin: 0px auto;
+
+  @include for-phone-and-tablet{
+    width:100%;
+  }
+}
+
+.container{
+  width:1200px;
+  margin: 0px auto;
+
+  @include for-phone-and-tablet{
+    width:96%;
+  }
+}
