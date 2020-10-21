@@ -19,7 +19,6 @@
 @mixin text-normal{
   font-size: 16px;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 44px;
-  color: $color-black-one;
+  line-height: 26px;
+  color: $color-gray-one;
 }

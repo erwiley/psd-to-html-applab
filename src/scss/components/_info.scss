@@ -1,0 +1,32 @@
+.info {
+  width:300px;
+
+  &__imgwrapper {
+    height:88px;
+    width:88px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__imgwrapper--red{ background-color:#FFECEF; }
+  &__imgwrapper--blue{ background-color:#F4F4FF; }
+  &__imgwrapper--blue-two{ background-color:#EAF9FF; }
+  &__imgwrapper--green{ background-color:#E4FFEE; }
+  &__imgwrapper--yellow{ background-color:#FFF6D3; }
+  &__imgwrapper--orange{ background-color:#FDEEE4; }
+
+  //&__image{}
+
+  //&__title{}
+
+  // &__text {
+  //   font-family: Arial, sans-serif;
+  //   font-size: 16px;
+  //   line-height: 24px;
+  //   color: #9B9999;
+  //   width:850px;
+  //   margin: 0px auto 40px auto;
+  // }
+}

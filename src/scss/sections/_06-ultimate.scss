@@ -1,0 +1,38 @@
+section.ultimate{
+  height:950px;
+  padding-left: 14%;
+
+  .left{
+    width:46%;
+    float:left;
+
+    p{ 
+      @include text-normal; 
+    }
+  
+    > p{ 
+      width:60%;
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+  
+    .row{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .img-wrapper{
+    position: relative;
+    width:38%;
+    float:left;
+    margin-top: 90px;
+
+      .over-img{
+        position: absolute;
+        top: 0%;
+        left:40%;
+      }
+  }
+}

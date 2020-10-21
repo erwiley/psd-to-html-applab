@@ -1,3 +1,23 @@
 section.trusted{
-  background-color: white;
+
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 110px;
+    color:$color-black-one;
+    padding-bottom: 36px;
+    text-align: center;
+  }
+  
+  .brands{
+    display:flex;
+    justify-content: space-between;
+    width:78%;
+    margin:0px auto;
+    padding-bottom: 100px;
+
+    img {
+      align-self: center;
+    }
+  }
 }

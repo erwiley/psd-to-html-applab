@@ -1,0 +1,32 @@
+section.choose{
+  height:900px;
+
+  > p{
+      @include text-normal;
+      width:60%;
+      padding-top: 30px;
+      padding-bottom: 60px;
+      margin: 0px auto;
+  }
+
+  .choose-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .info{
+      padding-bottom:60px;
+
+      h2{
+        color:$color-black-one;
+        text-align: center;
+      }
+  
+      p{
+        @include text-normal;
+        text-align: center;
+      }
+    }
+  }
+
+}

@@ -4,16 +4,21 @@ footer{
   width:1600px;
   margin: 0px auto;
 
-  @include for-phone-and-tablet{
-    width:100%;
-  }
+  @include for-phone-and-tablet{ width:100%; }
 }
 
 .container{
   width:1200px;
+  max-width: 96%;
   margin: 0px auto;
 
-  @include for-phone-and-tablet{
-    width:96%;
-  }
+  //@include for-phone-and-tablet{ width:96%; }
+}
+
+.container-two{
+  width:1060px;
+  max-width: 96%;
+  margin: 0px auto;
+
+  //@include for-phone-and-tablet{ width:96%; }
 }

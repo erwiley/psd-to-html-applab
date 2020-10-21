@@ -3,3 +3,28 @@
   padding:0px;
   box-sizing: border-box;
 }
+
+body{
+  //background-color: white;
+  background-color: #F9FBFC;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  color: $color-black-one;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.color-red-one{ color: $color-red-one; }
+.color-blue-two{ color: $color-blue-two; }
+.color-green-one{ color: $color-green-one; }
+
+

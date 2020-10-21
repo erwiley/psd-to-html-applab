@@ -28,7 +28,6 @@ header {
     .nav-brand{
       font-size: 30px;
       font-weight: 700;
-      font-family: "Poppins", Arial, sans-serif;
 
       span:nth-of-type(1){ color:$color-orange-one; }
       span:nth-of-type(2){ color:$color-black-one; }
@@ -45,7 +44,10 @@ header {
         list-style: none;
         
         li{
-          @include text-normal;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 44px;
+          color: $color-black-one;
           margin-right:34px;
 
           @include for-tablet-only { margin-right:24px; }
@@ -88,7 +90,6 @@ header {
       border-radius: 20px;
       font-size: 18px;
       font-weight: 400;
-      font-family: "Poppins", Arial, sans-serif;
 
       @include for-phone-only{ 
         font-size: 16px;
@@ -118,7 +119,6 @@ header {
     h1{
       font-size: 60px;
       font-weight: 600;
-      font-family: "Poppins", Arial, sans-serif;
       line-height: 75px;
       margin-top:10px;
       color:$color-black-one;
@@ -141,7 +141,6 @@ header {
       color:$color-gray-one;
       font-size: 18px;
       font-weight: 400;
-      font-family: "Poppins", Arial, sans-serif;
 
       @include for-phone-only{ 
         padding-top:10px; 
@@ -158,7 +157,6 @@ header {
     p:nth-of-type(2){
       font-size: 16px;
       font-weight: 400;
-      font-family: "Poppins", Arial, sans-serif;
       color: $color-blue-one;
       display:inline-block;
     }

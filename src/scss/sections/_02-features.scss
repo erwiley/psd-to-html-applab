@@ -1,0 +1,50 @@
+section.features{
+  height:1000px;
+
+  background-image: url('../img/features/base.png');
+  background-position: 10% 40%;
+  background-repeat: no-repeat;
+
+  p{
+    @include text-normal;
+  }
+
+  .features-img{
+    float: left;
+  }
+
+  .features-info{
+    padding-top: 50px;
+
+    > p{
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+    
+    .features-card{
+      width:440px;
+      height:180px;
+      float: left;
+
+      .image-wrapper{
+        height:88px;
+        width:88px;
+        float:left;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px;
+        margin-right:30px;
+      }
+
+      .icon-background-red{ background-color:#FFECEF; }
+      .icon-background-blue{ background-color:#F4F4FF; }
+      .icon-background-green{ background-color:#E4FFEE; }
+    }
+
+    .features-card:nth-of-type(1) h2{ color:$color-red-one; }
+    .features-card:nth-of-type(2) h2{ color:$color-blue-two; }
+    .features-card:nth-of-type(3) h2{ color:$color-green-one; }
+  }
+}

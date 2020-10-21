@@ -1,0 +1,30 @@
+section.jackpot{
+  height:600px;
+
+  p{ @include text-normal; }
+
+  .jackpot-heading{
+    height:170px;
+
+    .heading{
+      width:50%;
+      height:170px;
+      padding-right: 70px;
+      float:left;
+      border-right: 1px #4B4A48 solid;
+    }
+
+    .text{
+      width:50%;
+      height:170px;
+      padding: 30px 30px 30px 50px;
+      float:left;
+    }
+  }
+
+  .jackpot-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top:90px;
+  }
+}

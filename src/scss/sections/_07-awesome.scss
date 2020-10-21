@@ -1,0 +1,104 @@
+section.awesome{
+  height:1000px;
+  //background-color: lightslategray;
+
+  .button-wrapper{
+    display: inline-block;
+    border: 2px solid #ebebeb;
+    padding:4px;
+    border-radius: 30px;
+
+    .btn{
+      margin-right: 20px;
+    }
+
+    span{
+      @include text-normal;
+      margin-right: 20px;
+    }
+  }
+
+  > p{
+    @include text-normal;
+    width:60%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin: 0px auto;
+  }
+
+  .price-cards{
+    display:flex;
+    justify-content: space-between;
+    width:680px;
+    margin:0px auto;
+    padding-top: 40px;
+
+    p{
+      color: $color-gray-four;
+    }
+
+    .price-card{
+      width:320px;
+      //padding-top: 34px;
+
+      h2{
+        line-height: 0px;
+        padding-top: 34px;
+        padding-bottom: 14px;
+      }
+  
+      p{
+        @include text-normal;
+        text-align: center;
+      }
+  
+      .price-card-head{
+        background-color: $color-gray-three;
+        padding-top: 50px;
+
+        p:first-of-type{
+          padding-top: 34px;
+        }
+
+        span{
+          font-size: 60px;
+          font-weight: 600;
+          color: $color-black-one;
+        }
+
+        p:last-of-type{
+          padding-bottom: 30px;
+        }
+      }
+  
+      .price-card-body{
+        padding-top: 36px;
+        background-color: white;
+
+        p{
+          padding-bottom: 20px;
+          //color: $color-gray-four;
+        }
+
+        p:nth-of-type(4){
+          padding-bottom: 40px;
+        }
+      } 
+    }
+
+    .price-card:nth-of-type(2){
+      border: 2px solid #ebebeb;
+      border-radius: 10px;
+
+      .price-card-body{
+
+        p:last-of-type{
+          color:$color-blue-one;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
