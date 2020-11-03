@@ -5,7 +5,6 @@
 }
 
 body{
-  //background-color: white;
   background-color: #F9FBFC;
   font-family: "Poppins", Arial, sans-serif;
 }
@@ -21,6 +20,11 @@ h2{
   font-size: 20px;
   font-weight: 600;
   line-height: 58px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .color-red-one{ color: $color-red-one; }

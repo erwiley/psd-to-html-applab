@@ -1,0 +1,12 @@
+section.faq{
+  padding-bottom: 120px;
+
+  > p{
+    @include text-normal;
+    width:54%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin: 0px auto;
+  }
+}

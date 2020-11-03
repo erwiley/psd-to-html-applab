@@ -7,8 +7,9 @@
 
 @import 'layout/layout';
 @import 'layout/header';
-//@import 'layout/footer';
+@import 'layout/footer';
 
+@import 'components/accordion';
 @import 'components/buttons';
 @import 'components/info';
 // @import 'components/popup';
@@ -21,6 +22,9 @@
 @import 'sections/05-choose';
 @import 'sections/06-ultimate';
 @import 'sections/07-awesome';
+@import 'sections/08-testimonial';
+@import 'sections/09-faq';
+@import 'sections/10-download';
 
 // @import 'vendors/bootstrap';
 // @import 'vendors/jquery-ui';

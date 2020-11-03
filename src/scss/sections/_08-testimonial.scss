@@ -1,0 +1,63 @@
+section.testimonial{
+  height:860px;
+  padding-top:80px;
+
+  h2, h3{
+    color: $color-black-one;
+  }
+
+  p{
+    @include text-normal;
+  }
+
+  > img{
+    float:left;
+    padding-top:80px;
+  }
+
+  .heading-text{
+    padding-right: 18%;
+
+    p{
+      padding-top:26px;
+      padding-bottom:36px;
+    }
+  }
+
+  .body-text{
+    padding-right: 13%;
+
+    h2{
+      text-align: left;
+      padding-top:12px;
+      padding-bottom:12px;
+    }
+  }
+
+  .ceo{
+    padding-top:52px;
+
+    h3{
+      padding-top:20px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    .img-wrapper{
+      width:91px;
+      height:91px;
+      overflow: hidden;
+      border-radius: 50%;
+      float:left;  
+      margin-right: 30px;
+  
+      img{
+        margin-top:-10px;
+      }
+    }
+  }
+
+      
+}
