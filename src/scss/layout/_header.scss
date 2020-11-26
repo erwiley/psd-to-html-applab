@@ -1,29 +1,17 @@
 header {
   padding-top: 90px;  
-  height:1000px;
-  background-image: url('../img/header/shapes1.png'), url('../img/header/shapes2.png'), url('../img/header/skyline.png');
-  background-position: left center, -112px 100%, bottom right;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-
-  @include for-phone-and-tablet{
-    background-image: url('../img/header/skyline.png');
-    background-position: bottom right;
-    background-repeat: no-repeat;
-  }
-
-  @include for-tablet-only{
-    height:760px;
-  }
-
-  @include for-phone-only{
-    padding-top: 40px;  
-    height:1100px;
-  }
-
+  
+    @include for-phone-only{ padding-top: 40px; }
+  
   nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include for-phone-only{
+      display:block;
+      position: relative; 
+    }
 
     .nav-brand{
       font-size: 30px;
@@ -33,7 +21,7 @@ header {
       span:nth-of-type(2){ color:$color-black-one; }
     }
 
-    .nav-links{
+    #nav-links{
       display: flex;
       align-items: center;
 
@@ -42,6 +30,8 @@ header {
       ul{
         display: flex;
         list-style: none;
+
+        @include for-phone-only{display:initial;} 
         
         li{
           font-size: 16px;
@@ -49,6 +39,24 @@ header {
           line-height: 44px;
           color: $color-black-one;
           margin-right:34px;
+
+          a{
+            text-decoration: none;
+          }
+
+          a:link, 
+          a:visited, 
+          a:hover, 
+          a:active { color: $color-black-one; }
+
+          @include for-phone-only{
+          
+            a{
+              display:block;
+              width:100%;
+            }
+            
+          } 
 
           @include for-tablet-only { margin-right:24px; }
         }
@@ -60,121 +68,153 @@ header {
         }
       }
     }
-  }
 
-  .info-text{
-    padding-top:240px;
-    margin-left:70px;
-    width:46%;
-    float:left;
-
-    @include for-tablet-only{ 
-      padding-top:100px;
-      margin-left: 0px; 
-      width:400px;
-    }
-
-    @include for-phone-only{
-      padding-top:60px;
-      margin-left: 0px; 
-      width:100%;
-      float:none;
-    }
-
-    span:nth-of-type(1){
-      display: flex;
-      align-items: center;
-      color: $color-black-one;
-      background-color: $color-gray-two;
-      width:360px;
-      border-radius: 20px;
-      font-size: 18px;
-      font-weight: 400;
-
-      @include for-phone-only{ 
-        font-size: 16px;
-        width:94%;
-      }
-
-      span:nth-of-type(1){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:36px;
-        height:36px;
-        background-color: $color-orange-two;
-        border-radius: 50%;
-
-        @include for-phone-only{
-          width:30px;
-          height:30px;
-        }
-      }
-
-      span:nth-of-type(2){
-        padding-left:10px;
-      }
-    }
-
-    h1{
-      font-size: 60px;
-      font-weight: 600;
-      line-height: 75px;
-      margin-top:10px;
-      color:$color-black-one;
-
-      @include for-tablet-only{ 
-        font-size: 46px; 
-        line-height: 60px;
-        margin-top:20px;
-      }
-
-      @include for-phone-only{ 
-        font-size: 36px; 
-        line-height: 50px;
-      }
-    }
-
-    p:nth-of-type(1){
-      padding-top:20px;
-      padding-bottom:40px;
-      color:$color-gray-one;
-      font-size: 18px;
-      font-weight: 400;
-
-      @include for-phone-only{ 
-        padding-top:10px; 
-        padding-bottom:20px;
-      }
-    }
-
-    .btn{
-      margin-right:34px;
-
-      @include for-phone-only{ margin-right:20px; }
-    }
-
-    p:nth-of-type(2){
-      font-size: 16px;
-      font-weight: 400;
-      color: $color-blue-one;
-      display:inline-block;
-    }
-  }
-
-  .info-image{
-    img{
-      padding-top:20px;
-      margin-left:94px;
-
-      @include for-tablet-only{
-        width:44%;
-        margin-left:0px;
-      }
+    a.icon {
+      display: none;
 
       @include for-phone-only{
-        width:96%;
-        margin-left:0px;
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+      }
+    }
+
+    a:link.icon, 
+    a:visited.icon, 
+    a:hover.icon, 
+    a:active.icon { color: $color-black-one; }
+  }
+
+  .header-info{
+    background-image: url('../img/header/shapes1.png'), url('../img/header/shapes2.png'), url('../img/header/skyline.png');
+    background-position: left 44px, -112px 100%, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height:860px;
+
+    @include for-tablet-only{ height:626px; }
+    @include for-phone-only{ height:1100px; }
+
+    @include for-phone-and-tablet{
+      background-image: url('../img/header/skyline.png');
+      background-position: bottom right;
+      background-repeat: no-repeat;
+    }
+
+    .info-text{
+      padding-top:240px;
+      margin-left:70px;
+      width:46%;
+      float:left;
+  
+      @include for-tablet-only{ 
+        padding-top:100px;
+        margin-left: 0px; 
+        width:400px;
+      }
+  
+      @include for-phone-only{
+        padding-top:60px;
+        margin-left: 0px; 
+        width:100%;
+        float:none;
+      }
+  
+      span:nth-of-type(1){
+        display: flex;
+        align-items: center;
+        color: $color-black-one;
+        background-color: $color-gray-two;
+        width:360px;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 400;
+  
+        @include for-phone-only{ 
+          font-size: 16px;
+          width:94%;
+        }
+  
+        span:nth-of-type(1){
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:36px;
+          height:36px;
+          background-color: $color-orange-two;
+          border-radius: 50%;
+  
+          @include for-phone-only{
+            width:30px;
+            height:30px;
+          }
+        }
+  
+        span:nth-of-type(2){
+          padding-left:10px;
+        }
+      }
+  
+      h1{
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 75px;
+        margin-top:10px;
+        color:$color-black-one;
+  
+        @include for-tablet-only{ 
+          font-size: 46px; 
+          line-height: 60px;
+          margin-top:20px;
+        }
+  
+        @include for-phone-only{ 
+          font-size: 36px; 
+          line-height: 50px;
+        }
+      }
+  
+      p:nth-of-type(1){
+        padding-top:20px;
+        padding-bottom:40px;
+        color:$color-gray-one;
+        font-size: 18px;
+        font-weight: 400;
+  
+        @include for-phone-only{ 
+          padding-top:10px; 
+          padding-bottom:20px;
+        }
+      }
+  
+      .btn{
+        margin-right:34px;
+  
+        @include for-phone-only{ margin-right:20px; }
+      }
+  
+      p:nth-of-type(2){
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-blue-one;
+        display:inline-block;
+      }
+    }
+
+    .info-image{
+      img{
+        padding-top:20px;
+        margin-left:94px;
+  
+        @include for-tablet-only{
+          width:44%;
+          margin-left:0px;
+        }
+  
+        @include for-phone-only{
+          width:96%;
+          margin-left:0px;
+        }
       }
     }
   }
