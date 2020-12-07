@@ -92,8 +92,8 @@ header {
     background-repeat: no-repeat, no-repeat, no-repeat;
     height:860px;
 
-    @include for-tablet-only{ height:626px; }
-    @include for-phone-only{ height:1100px; }
+    @include for-tablet-only{ height:676px; }
+    @include for-phone-only{ height:1030px; }
 
     @include for-phone-and-tablet{
       background-image: url('../img/header/skyline.png');
