@@ -1,4 +1,7 @@
 section.faq{
+  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:hide; }
+  
   padding-bottom: 120px;
 
   > p{

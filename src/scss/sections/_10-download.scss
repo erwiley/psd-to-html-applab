@@ -1,4 +1,7 @@
 section.download{
+  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:hide; }
+  
   height:482px;
   position: relative;
   background-image: url('../img/download/city.png');

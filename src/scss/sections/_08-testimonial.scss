@@ -1,4 +1,7 @@
 section.testimonial{
+  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:hide; }
+  
   height:860px;
   padding-top:80px;
 

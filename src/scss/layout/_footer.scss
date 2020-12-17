@@ -1,4 +1,7 @@
 footer{
+  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:hide; }
+  
   height:500px;
   background-color:$color-blue-three;
 

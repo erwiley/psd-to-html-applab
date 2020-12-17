@@ -1,4 +1,7 @@
 section.ultimate{
+  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:hide; }
+  
   height:950px;
   padding-left: 14%;
 

@@ -1,4 +1,7 @@
 section.choose{
+  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:hide; }
+  
   height:900px;
 
   > p{

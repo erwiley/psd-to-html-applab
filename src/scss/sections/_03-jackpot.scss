@@ -1,4 +1,6 @@
 section.jackpot{
+  @include for-phone-and-tablet { display:none; }
+  
   height:600px;
 
   p{ @include text-normal; }
