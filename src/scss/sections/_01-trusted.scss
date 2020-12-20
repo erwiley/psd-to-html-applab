@@ -23,6 +23,7 @@ section.trusted{
     @include for-phone-only{ 
       flex-wrap: wrap;
       width:96%; 
+      padding-bottom: 50px;
     }
 
     img {

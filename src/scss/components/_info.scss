@@ -1,6 +1,9 @@
 .info {
   width:300px;
 
+  @include for-phone-only{ width:100%; }
+  @include for-phone-only{ padding-bottom: 50px; }
+
   &__imgwrapper {
     height:88px;
     width:88px;

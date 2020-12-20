@@ -4,6 +4,9 @@ section.features{
   background-position: 10% 40%;
   background-repeat: no-repeat;
 
+  @include for-phone-only { height:900px; }
+  @include for-tablet-only { height:800px; }
+  //@include for-tablet-only { height:auto; }
   @include for-phone-and-tablet { background-image: none; }
 
   p{
