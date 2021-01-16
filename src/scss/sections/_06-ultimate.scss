@@ -1,13 +1,21 @@
 section.ultimate{
-  @include for-phone-and-tablet { display:none; }
-  //@include for-phone-and-tablet { display:hide; }
   
   height:950px;
   padding-left: 14%;
 
+  @include for-phone-and-tablet { 
+    height:auto;
+    padding: 4%; 
+  }
+  
   .left{
     width:46%;
     float:left;
+
+    @include for-phone-and-tablet { 
+      width:100%; 
+      float:none;
+    }
 
     p{ 
       @include text-normal; 
@@ -17,6 +25,8 @@ section.ultimate{
       width:60%;
       padding-top: 30px;
       padding-bottom: 60px;
+
+      @include for-phone-and-tablet{ width:100%; }
     }
   
     .row{
@@ -31,6 +41,8 @@ section.ultimate{
     width:38%;
     float:left;
     margin-top: 90px;
+
+    @include for-phone-and-tablet{ display:none; }
 
       .over-img{
         position: absolute;

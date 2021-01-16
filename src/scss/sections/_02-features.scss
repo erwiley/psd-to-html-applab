@@ -6,7 +6,6 @@ section.features{
 
   @include for-phone-only { height:900px; }
   @include for-tablet-only { height:800px; }
-  //@include for-tablet-only { height:auto; }
   @include for-phone-and-tablet { background-image: none; }
 
   p{
@@ -45,8 +44,6 @@ section.features{
         margin-right:auto;
         float:none;
       }
-      //@include for-phone-and-tablet { width:100%; }
-
 
       .image-wrapper{
         height:88px;

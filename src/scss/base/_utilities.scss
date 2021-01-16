@@ -24,6 +24,7 @@
   margin-right:auto;
 }
 
+.mt-10{ margin-top: 10px !important; }
 .mt-20{ margin-top: 20px !important; }
 .mt-50{ margin-top: 50px !important; }
 .mt-60{ margin-top:60px !important; }
@@ -31,6 +32,7 @@
 .mt-100{ margin-top: 100px !important; }
 
 @include for-phone-only {
+  .sm-mt-10{ margin-top: 10px !important; }
   .sm-mt-20{ margin-top: 20px !important; }
   .sm-mt-50{ margin-top: 50px !important; }
   .sm-mt-60{ margin-top:60px !important; }
@@ -39,6 +41,7 @@
 }
 
 @include for-tablet-only {
+  .md-mt-10{ margin-top: 10px !important; }
   .md-mt-20{ margin-top: 20px !important; }
   .md-mt-50{ margin-top: 50px !important; }
   .md-mt-60{ margin-top:60px !important; }
@@ -47,6 +50,7 @@
 }
 
 @include for-desktop-only {
+  .lg-mt-10{ margin-top: 10px !important; }
   .lg-mt-20{ margin-top: 20px !important; }
   .lg-mt-50{ margin-top: 50px !important; }
   .lg-mt-60{ margin-top:60px !important; }

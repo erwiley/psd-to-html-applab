@@ -6,7 +6,8 @@ section.designed{
 
   @include for-phone-and-tablet{ padding-right: 0px;}
 
-  @include for-phone-only{ height:auto; }
+  @include for-phone-only{ height:500px; }
+  
 
   img{
     float:left;

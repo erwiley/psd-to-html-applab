@@ -1,8 +1,10 @@
 section.choose{
-  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:none; }
   //@include for-phone-and-tablet { display:hide; }
   
   height:900px;
+
+  @include for-phone-and-tablet { height:auto; }
 
   > p{
       @include text-normal;
