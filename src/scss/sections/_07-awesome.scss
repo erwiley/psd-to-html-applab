@@ -1,8 +1,8 @@
 section.awesome{
-  @include for-phone-and-tablet { display:none; }
-  //@include for-phone-and-tablet { display:hide; }
+  @include for-phone-and-tablet { padding-top: 60px; }
   
   height:1000px;
+  @include for-phone-only{ height:1560px; }
 
   .button-wrapper{
     display: inline-block;
@@ -36,12 +36,16 @@ section.awesome{
     margin:0px auto;
     padding-top: 40px;
 
+    @include for-phone-only { display:initial; }
+
     p{
       color: $color-gray-four;
     }
 
     .price-card{
       width:320px;
+
+      @include for-phone-only { width:90%; }
 
       h2{
         line-height: 0px;

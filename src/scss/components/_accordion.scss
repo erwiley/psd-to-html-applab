@@ -18,6 +18,11 @@
     outline: none;
     cursor: pointer;
     transition: 0.4s;
+
+    @include for-phone-only { 
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__title:hover {
@@ -36,5 +41,12 @@
     color: $color-gray-one;    
     display: none;
     overflow: hidden;
+
+    @include for-phone-only { 
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
   }
 }

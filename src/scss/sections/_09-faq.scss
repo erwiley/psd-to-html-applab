@@ -1,6 +1,5 @@
 section.faq{
-  @include for-phone-and-tablet { display:none; }
-  //@include for-phone-and-tablet { display:hide; }
+  @include for-phone-and-tablet { padding-top:100px; }
   
   padding-bottom: 120px;
 
@@ -11,5 +10,9 @@ section.faq{
     padding-top: 30px;
     padding-bottom: 60px;
     margin: 0px auto;
+
+    @include for-phone-only { 
+      width:90%;
+    }
   }
 }

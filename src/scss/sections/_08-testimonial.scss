@@ -1,9 +1,9 @@
 section.testimonial{
-  @include for-phone-and-tablet { display:none; }
-  //@include for-phone-and-tablet { display:hide; }
-  
+
   height:860px;
   padding-top:80px;
+
+  @include for-phone-and-tablet { height:auto; }
 
   h2, h3{
     color: $color-black-one;
@@ -16,10 +16,17 @@ section.testimonial{
   > img{
     float:left;
     padding-top:80px;
+
+    @include for-phone-only{ display:none; }
   }
 
   .heading-text{
     padding-right: 18%;
+
+    @include for-phone-and-tablet{
+      padding-left:5%;
+      padding-right:5%;
+    }
 
     p{
       padding-top:26px;
@@ -30,6 +37,11 @@ section.testimonial{
   .body-text{
     padding-right: 13%;
 
+    @include for-phone-and-tablet{
+      padding-left:5%;
+      padding-right:5%;
+    }
+
     h2{
       text-align: left;
       padding-top:12px;
@@ -39,6 +51,11 @@ section.testimonial{
 
   .ceo{
     padding-top:52px;
+
+    @include for-phone-and-tablet{
+      padding-left:5%;
+      padding-right:5%;
+    }
 
     h3{
       padding-top:20px;
