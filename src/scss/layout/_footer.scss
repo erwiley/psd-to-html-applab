@@ -1,9 +1,14 @@
 footer{
-  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:none; }
   //@include for-phone-and-tablet { display:hide; }
   
   height:500px;
   background-color:$color-blue-three;
+
+  @include for-phone-only{ 
+    height:auto; 
+    padding-bottom: 30px;
+  }
 
   .nav-brand{
     font-size: 30px;
@@ -26,12 +31,25 @@ footer{
       width:460px;
       max-width: 90%;
       margin:0px auto;
+
+      @include for-phone-only{ 
+        display:initial; 
+      }
+
+      @include for-tablet-only{ 
+        width:100%;
+      }
       
       li{
         font-size: 16px;
         font-weight: 400;
         line-height: 44px;
         color: white;
+
+        @include for-phone-only{ 
+          width:60%;
+          margin:0px auto;
+        }
       }
     }
   }
@@ -43,6 +61,9 @@ footer{
     width:11%;
     color:$color-gray-five;
     margin:0px auto;
+
+    @include for-tablet-only{ width:20%; }
+    @include for-phone-only{ width:40%; }
 
     .brand-active{
       color:white;

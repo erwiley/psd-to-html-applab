@@ -1,5 +1,7 @@
 section.testimonial{
 
+  //@include for-phone-and-tablet { display:none; }
+
   height:860px;
   padding-top:80px;
 
@@ -17,6 +19,7 @@ section.testimonial{
     float:left;
     padding-top:80px;
 
+    @include for-tablet-only{ width:100%; }
     @include for-phone-only{ display:none; }
   }
 

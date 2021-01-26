@@ -1,5 +1,5 @@
 section.download{
-  @include for-phone-and-tablet { display:none; }
+  //@include for-phone-and-tablet { display:none; }
   //@include for-phone-and-tablet { display:hide; }
   
   height:482px;
@@ -8,9 +8,21 @@ section.download{
   background-position: top right;
   background-repeat: no-repeat;
 
+  @include for-phone-and-tablet { 
+    background-image:none; 
+    height:auto;
+  }
+
   .text{
     padding-top:76px;
     padding-left:210px;
+
+    @include for-phone-and-tablet { 
+      padding-top:0px;
+      padding-left:5%;
+      padding-bottom:30px;
+      padding-right:5%;
+    }
 
     h1{
       font-size: 48px;
@@ -21,10 +33,20 @@ section.download{
       @include text-normal;
       width:48%;
       padding-bottom:44px;
+
+      @include for-phone-and-tablet { 
+        width:100%;
+      }
     }
 
     img{ 
       margin-right: 28px;
+    }
+
+    img:nth-of-type(1){
+      @include for-phone-only { 
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -35,5 +57,9 @@ section.download{
     bottom: 0px;
     z-index: -1;
     background-color:$color-blue-three;   
+
+    @include for-phone-and-tablet { 
+      position: static;
+    }
   }
 }
